@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8282608B-AF25-4AF8-A0B3-21663336BCF5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>COMPANYMASTER.My.MyApplication</StartupObject>
+    <RootNamespace>COMPANYMASTER</RootNamespace>
+    <AssemblyName>COMPANYMASTER</AssemblyName>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>COMPANYMASTER.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>COMPANYMASTER.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>COMPANYMASTER.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>COMPANYMASTER.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ATTEND.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ATTEND.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONCERNSELCTION.Designer.vb">
+      <DependentUpon>CONCERNSELCTION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONCERNSELCTION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="createADDON.Designer.vb">
+      <DependentUpon>createADDON.vb</DependentUpon>
+    </Compile>
+    <Compile Include="createADDON.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="createFINISHEDPRODUCT.Designer.vb">
+      <DependentUpon>createFINISHEDPRODUCT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="createFINISHEDPRODUCT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="createJOB.Designer.vb">
+      <DependentUpon>createJOB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="createJOB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="createMEASURE.Designer.vb">
+      <DependentUpon>createMEASURE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="createMEASURE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="createRAWMATERIAL.Designer.vb">
+      <DependentUpon>createRAWMATERIAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="createRAWMATERIAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="createUSER.Designer.vb">
+      <DependentUpon>createUSER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="createUSER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="createWASTE.Designer.vb">
+      <DependentUpon>createWASTE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="createWASTE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EB.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EB.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LEDGER.Designer.vb">
+      <DependentUpon>LEDGER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LEDGER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm1.Designer.vb">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.Designer.vb">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MyLEDGER.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyLEDGER.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="newCUSTOMER.Designer.vb">
+      <DependentUpon>newCUSTOMER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="newCUSTOMER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newEMPLOYEE.Designer.vb">
+      <DependentUpon>newEMPLOYEE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="newEMPLOYEE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newSUPPLIER.Designer.vb">
+      <DependentUpon>newSUPPLIER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="newSUPPLIER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAYMENT.Designer.vb">
+      <DependentUpon>PAYMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PURCHASE.Designer.vb">
+      <DependentUpon>PURCHASE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PURCHASE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RECEIPT.Designer.vb">
+      <DependentUpon>RECEIPT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RECEIPT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recordWASTE.Designer.vb">
+      <DependentUpon>recordWASTE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="recordWASTE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptATTEND.Designer.vb">
+      <DependentUpon>rptATTEND.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptATTEND.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptEBREADING.Designer.vb">
+      <DependentUpon>rptEBREADING.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptEBREADING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptSALARYSHEET.Designer.vb">
+      <DependentUpon>rptSALARYSHEET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptSALARYSHEET.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptSTOCK.Designer.vb">
+      <DependentUpon>rptSTOCK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rptSTOCK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SALARYENTRY.Designer.vb">
+      <DependentUpon>SALARYENTRY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SALARYENTRY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SALARYREPORT.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SALARYREPORT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SALES.Designer.vb">
+      <DependentUpon>SALES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SALES.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STOCK.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>STOCK.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="uploadCONSUMPTIONDAILY.Designer.vb">
+      <DependentUpon>uploadCONSUMPTIONDAILY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uploadCONSUMPTIONDAILY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uploadOPSTOCK.Designer.vb">
+      <DependentUpon>uploadOPSTOCK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uploadOPSTOCK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uploadEBREADING.Designer.vb">
+      <DependentUpon>uploadEBREADING.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uploadEBREADING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uploadEMPWORKHRS.Designer.vb">
+      <DependentUpon>uploadEMPWORKHRS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uploadEMPWORKHRS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uploadPRODUCTION.Designer.vb">
+      <DependentUpon>uploadPRODUCTION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uploadPRODUCTION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uploadPRODUCTIONINDI.Designer.vb">
+      <DependentUpon>uploadPRODUCTIONINDI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uploadPRODUCTIONINDI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uploadWORKHRS.Designer.vb">
+      <DependentUpon>uploadWORKHRS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uploadWORKHRS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ATTEND.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ATTEND.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONCERNSELCTION.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CONCERNSELCTION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="createADDON.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>createADDON.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="createFINISHEDPRODUCT.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>createFINISHEDPRODUCT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="createJOB.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>createJOB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="createMEASURE.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>createMEASURE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="createRAWMATERIAL.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>createRAWMATERIAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="createUSER.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>createUSER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="createWASTE.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>createWASTE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EB.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EB.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LEDGER.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LEDGER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyLEDGER.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MyLEDGER.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newCUSTOMER.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>newCUSTOMER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newEMPLOYEE.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>newEMPLOYEE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newSUPPLIER.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>newSUPPLIER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PAYMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PURCHASE.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PURCHASE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RECEIPT.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RECEIPT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recordWASTE.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>recordWASTE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptATTEND.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptATTEND.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptEBREADING.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptEBREADING.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptSALARYSHEET.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptSALARYSHEET.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptSTOCK.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptSTOCK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SALARYENTRY.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SALARYENTRY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SALARYREPORT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SALARYREPORT.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SALES.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SALES.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STOCK.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>STOCK.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uploadCONSUMPTIONDAILY.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>uploadCONSUMPTIONDAILY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uploadOPSTOCK.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>uploadOPSTOCK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uploadEBREADING.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>uploadEBREADING.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uploadEMPWORKHRS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>uploadEMPWORKHRS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uploadPRODUCTION.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>uploadPRODUCTION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uploadPRODUCTIONINDI.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>uploadPRODUCTIONINDI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uploadWORKHRS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>uploadWORKHRS.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="COMPANY.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
